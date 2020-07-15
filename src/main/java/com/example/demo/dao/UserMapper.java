@@ -16,5 +16,10 @@ public interface UserMapper {
 
     List<User> selectAll();
 
+    /**
+     *
+     * @param record
+     * @return
+     */
     int updateByPrimaryKey(User record);
 }
