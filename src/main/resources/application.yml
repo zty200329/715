@@ -23,6 +23,12 @@ mybatis:
   configuration:
     map-underscore-to-camel-case: true
     use-generated-keys: true
+jwt:
+  secret: Uchainshequ
+  expiration: 1296000
+  tokenStart: "Bearer "
+  tokenName: Authorization
+  defaultPassword: "123456"
 
 
 server:

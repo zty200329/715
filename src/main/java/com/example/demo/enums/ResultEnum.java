@@ -17,6 +17,10 @@ public enum ResultEnum {
     HAS_IN_QUEUE(3,"在排队队列中"),
     QUEUE_IS_CLOSED(4,"排队已关闭或暂停"),
     THERE_ARE_QUEUES_NOT_CLOSED(5,"有排队任有人在排队"),
+    USER_NOT_EXIST(6,"用户不存在"),
+    PASSWORD_ERROR(7, "密码错误"),
+    USER_HAS_EXIST(8, "用户已经存在"),
+    SQL_ERROR(9, "添加用户失败"),
 
 
     AUTHENTICATION_ERROR(401, "用户认证失败,请重新登录"),

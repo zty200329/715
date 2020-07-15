@@ -8,18 +8,15 @@ import java.util.List;
 public interface UserMapper {
     int deleteByPrimaryKey(Integer id);
 
-    int deleteByUserName(String username);
-
     int insert(User record);
+
+    int deleteByUserName(String userName);
 
     User selectByPrimaryKey(Integer id);
 
     List<User> selectAll();
 
-    /**
-     *
-     * @param record
-     * @return
-     */
     int updateByPrimaryKey(User record);
+
+    User selectUserByUsername(String name);
 }

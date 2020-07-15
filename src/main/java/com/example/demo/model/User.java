@@ -2,9 +2,6 @@ package com.example.demo.model;
 
 import java.io.Serializable;
 
-/**
- * @author Administrator
- */
 public class User implements Serializable {
     private Integer id;
 
@@ -12,7 +9,7 @@ public class User implements Serializable {
 
     private String passwd;
 
-    private Byte role;
+    private Integer role;
 
     private static final long serialVersionUID = 1L;
 
@@ -40,11 +37,11 @@ public class User implements Serializable {
         this.passwd = passwd == null ? null : passwd.trim();
     }
 
-    public Byte getRole() {
+    public Integer getRole() {
         return role;
     }
 
-    public void setRole(Byte role) {
+    public void setRole(Integer role) {
         this.role = role;
     }
 
